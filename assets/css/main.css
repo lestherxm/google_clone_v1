@@ -164,7 +164,6 @@ main.container .trends{
     align-items: center;
     padding: 1.15rem 1rem;
     border-bottom: 0.1rem solid var(--bg-footer-border);
-    margin-bottom: 1rem;
 }
 
 .trends .trend-item > :nth-child(2){
