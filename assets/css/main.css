@@ -76,6 +76,7 @@ header.container section > *{
 .services ul li a{
     text-decoration: none;
     padding: 1rem;
+    color: var(--font-color);
 }
 
 .services ul li a.active{
