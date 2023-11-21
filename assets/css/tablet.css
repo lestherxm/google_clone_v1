@@ -1,1 +1,13 @@
-/* 769px — 1024px */
+/* 768px — 1023px */
+main.container picture img {
+    width: 28rem;
+    margin: 16rem auto 2rem;
+}
+
+footer.container{
+    margin-top: 3.7rem;
+}
+
+.search-container input, .search-container input:hover{
+    min-width: 56rem;
+}

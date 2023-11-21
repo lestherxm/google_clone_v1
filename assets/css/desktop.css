@@ -1,1 +1,56 @@
-/* 1025px — 1200px */
+/* 1024px — max-width */
+
+header.container{
+    justify-content: end;
+}
+
+header.container:first-child{
+    text-transform: capitalize;
+}
+
+.hamburger-options{
+    display: none;
+}
+
+main.container picture img {
+    width: 32rem;
+    margin: auto;
+}
+
+main.container{
+    min-height: 86vh;
+    min-height: 86svh;
+}
+
+main.container .trends{
+    display: none;
+}
+
+.country{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-left: 2.5rem;
+}
+
+footer.container{
+    margin-top: 0;
+    min-height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+footer.container .options .list{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    margin: 0 1rem;
+}
+
+.list .item{
+    margin: 1rem 1.5rem;
+}
+
+main.container .search-container:hover{
+    box-shadow: 0 0 10px 2px var(--bg-footer-border);
+}

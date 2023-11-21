@@ -6,6 +6,7 @@
     --bg-footer: #F2F2F2;
     --bg-footer-border: #E3E4E7;
     --font-color: #5E5E5E;
+    --search-font-color: #474646;
     --btn-primary-font-color: #fff;
 }
 
@@ -24,7 +25,11 @@ html {
 }
 
 body{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Reset default styles for buttons */
@@ -48,6 +53,7 @@ header.container{
     justify-content: space-between;
     min-height: 5vh;
     min-height: 5svh;
+    user-select: none;
 }
 
 header.container section{
@@ -97,8 +103,14 @@ header.container section > *{
 }
 
 main.container{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     place-items: center;
+    min-height: 83vh;
+    min-height: 83svh;
+    max-width: 70rem;
+    min-width: 30rem;
 }
 
 main.container picture img {
@@ -110,29 +122,44 @@ main.container form{
     width: 100%;
 }
 
+main.container .search-container:hover{
+    box-shadow: 0 0 10px 2px var(--bg-footer-border);
+}
+
 main.container form .search-container{
     max-width: inherit;
     display: flex;
-    justify-content: space-around;
-    border: 0.2rem solid var(--bg-footer-border);
+    justify-content: space-between;
+    border: 0.1rem solid var(--bg-footer-border);
+    box-shadow: 1px 1px var(--bg-footer-border);
     border-radius: 2rem;
     margin: 0 1rem;
     position: relative;
     padding: 0.5rem 0.5rem;
 }
 
+.search-container div{
+    display: flex;
+    padding: 0 0.5rem;
+}
+
 .search-container input, .search-container input:focus{
     border: none;
-    margin-left: 0;
-    color: var(--font-color);
+    margin-left: 0.5rem;
+    color: var(--search-font-color);
     font-size: inherit;
     outline: none;
+    min-width: 27rem;
+}
+
+.search-container .options{
+    display: flex;
 }
 
 .language-label{
-    margin: 3rem auto;
+    margin: 3rem auto 4rem;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: inherit;
 }
 
 .language-label a{
@@ -142,13 +169,11 @@ main.container form .search-container{
 
 main.container .trends{
     min-width: 100%;
-    min-height: 55vh;
-    min-height: 55svh;
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem;
     position: relative;
-    font-size: 1.4rem;
+    font-size: inherit;
     font-weight: 500;
 }
 
@@ -162,7 +187,7 @@ main.container .trends{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 1.15rem 1rem;
+    padding: 1.21rem 1rem;
     border-bottom: 0.1rem solid var(--bg-footer-border);
 }
 
@@ -175,38 +200,48 @@ footer.container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2rem;
+    min-height: 12vh;
+    min-height: 12svh;
 }
 
 .country{
     padding: 1rem;
     border-bottom: 0.2rem solid var(--bg-footer-border);
     margin-bottom: 4rem;
-    font-size: 1.5rem;
+    font-size: inherit;
     font-weight: 400;
 }
 
 footer.container .options{
     border-top: 0.2rem solid var(--bg-footer-border);
+    display: flex;
+    justify-content: center;
 }
 
 footer.container .options .list{
     list-style: none;
+    font-size: inherit;
+    margin: 1rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.list section{
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
-    margin: 1rem;
+    flex-wrap: wrap;
+    max-width: 55rem;
 }
 
 .list .item{
-    margin: 1rem;
+    margin: 1rem 2.7rem;
 }
 
 .options .item a{
     text-decoration: none;
     color: var(--font-color);
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: inherit;
+    font-weight: 400;
 }

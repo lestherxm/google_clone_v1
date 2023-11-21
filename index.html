@@ -14,9 +14,9 @@
     <!-- General | Mobile Style -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Tablet Style -->
-    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 768px)">
     <!-- Desktop Style -->
-    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 1025px)">
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 1024px)">
     <title>Google Clone V1 | Lesther Xitumul Manuel</title>
     <!-- This metadata helps to share my project on social media in a great way :D -->
     <meta property="og:title" content="Google Clone V1 | Lesther Xitumul Manuel">
@@ -40,7 +40,7 @@
             <div class="services">
                 <ul>
                     <li>
-                        <a href="#" class="active">All</a>
+                        <a href="#" class="active" id="allLink">All</a>
                     </li>
                     <li>
                         <a href="#">Images</a>
@@ -57,35 +57,38 @@
             </div>
     
             <button class="button button--primary">
-                Sign in
+                <span>Sign in</span>
             </button>
         </section>
     </header>
 
-    <main class="container">
+    <main class="container" id="main-container">
         <picture>
-            <img src="./assets/img/googlelogo_color_160x56dp.png" alt="Google Logo">
+            <img src="./assets/img/googlelogo_color_160x56dp.png" alt="Google Logo" id="google-logo">
         </picture>
 
         <form action="/search">
 
             <div class="search-container">
 
-                <span class="material-symbols-outlined icon">
-                    search
-                </span>
-
-                <input type="text" id="search" name="search" autocomplete="off">
+                <div>
+                    <span class="material-symbols-outlined icon">
+                        search
+                    </span>
+                    <input type="text" id="search" name="search" autocomplete="off">
+                </div>
                 
-                <div class="options">
+                <div>
+                    <div class="options">
 
-                    <span class="material-symbols-outlined icon">
-                        mic
-                    </span>
-
-                    <span class="material-symbols-outlined icon">
-                        photo_camera
-                    </span>
+                        <span class="material-symbols-outlined icon">
+                            mic
+                        </span>
+    
+                        <span class="material-symbols-outlined icon">
+                            photo_camera
+                        </span>
+                    </div>
                 </div>
             </div>
         </form>
@@ -178,50 +181,53 @@
             </span>
         </div>
         <div class="options">
-
             <ul class="list">
 
-                <li class="item">
-                    <a href="#">
-                        Dark theme: off
-                    </a>
-                </li>
+                <section>
+                    <li class="item">
+                        <a href="#">
+                            Dark theme: off
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            Settings
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                </section>
 
-                <li class="item">
-                    <a href="#">
-                        Settings
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="#">
-                        Privacy
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="#">
-                        Terms
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="#">
-                        Advertising
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="#">
-                        Business
-                    </a>
-                </li>
-
-                <li class="item">
-                    <a href="#">
-                        About
-                    </a>
-                </li>
+                <section>
+                    <li class="item">
+                        <a href="#">
+                            Advertising
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            Business
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                </section>
             </ul>
         </div>
     </footer>
