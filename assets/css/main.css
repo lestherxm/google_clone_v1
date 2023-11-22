@@ -108,7 +108,7 @@ main.container{
     justify-content: center;
     place-items: center;
     max-width: 70rem;
-    min-width: 30rem;
+    min-width: 32rem;
     min-height: 83vh;
     min-height: 83svh;
 }
@@ -138,6 +138,10 @@ main.container form .search-container{
     padding: 0.5rem 0.5rem;
 }
 
+.search-container{
+    min-width: inherit;
+}
+
 .search-container div{
     display: flex;
     padding: 0 0.5rem;
@@ -149,7 +153,7 @@ main.container form .search-container{
     color: var(--search-font-color);
     font-size: inherit;
     outline: none;
-    min-width: 27rem;
+    /* min-width: 27rem; */
 }
 
 .search-container .options{
@@ -236,7 +240,7 @@ footer.container .options .list{
 }
 
 .list .item{
-    margin: 1rem 2.8rem;
+    margin: 1rem 3rem;
 }
 
 .options .item a{
