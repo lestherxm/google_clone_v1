@@ -107,15 +107,15 @@ main.container{
     flex-direction: column;
     justify-content: center;
     place-items: center;
-    min-height: 83vh;
-    min-height: 83svh;
     max-width: 70rem;
     min-width: 30rem;
+    min-height: 83vh;
+    min-height: 83svh;
 }
 
 main.container picture img {
     width: 15rem;
-    margin: 8rem auto 2rem;
+    margin: 4rem auto 2rem;
 }
 
 main.container form{
@@ -134,7 +134,7 @@ main.container form .search-container{
     box-shadow: 1px 1px var(--bg-footer-border);
     border-radius: 2rem;
     margin: 0 1rem;
-    position: relative;
+    /* position: relative; */
     padding: 0.5rem 0.5rem;
 }
 
@@ -157,7 +157,7 @@ main.container form .search-container{
 }
 
 .language-label{
-    margin: 3rem auto 4rem;
+    margin: 2rem auto 4rem;
     font-weight: 500;
     font-size: inherit;
 }
@@ -172,7 +172,7 @@ main.container .trends{
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem;
-    position: relative;
+    /* position: relative; */
     font-size: inherit;
     font-weight: 500;
 }
